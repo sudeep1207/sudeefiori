@@ -1,0 +1,5 @@
+applications:
+- name  : sudeepfiori
+- buildpacks:
+  - nodejs_buildpack
+- memory: 1G  
