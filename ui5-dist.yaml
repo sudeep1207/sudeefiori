@@ -2,8 +2,14 @@ specVersion: '2.6'
 metadata:
   name: sudeepfiori
 type: application
+server:
+  customMiddleware:
+  - name: fiori-tools-appreload
+    afterMiddleware: compression
+    configuration:
+      port: 35739 
+      path: dist
 resources:
-  configurations:
+  configuration:
     paths:
-     Webapp: dist
-
+      webapp: dist
